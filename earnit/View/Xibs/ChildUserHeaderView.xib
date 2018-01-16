@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChildUserHeaderView" customModule="EarnIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="457" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S1b-NR-SPn">
+                    <rect key="frame" x="9" y="10" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Ie0-Ap-Sse"/>
+                        <constraint firstAttribute="height" constant="60" id="w89-T8-DOh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Justin's " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTj-vd-rhS">
+                    <rect key="frame" x="20" y="15" width="338" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="SpV-FB-kjU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                    <color key="textColor" red="0.30726817649999999" green="1" blue="0.1070858085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mXm-9s-U7h">
+                    <rect key="frame" x="368" y="12" width="60" height="60"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="3Cd-Tw-Uhs"/>
+                        <constraint firstAttribute="width" constant="60" id="I7W-KX-7Hf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8f-Xs-9j3">
+                    <rect key="frame" x="368" y="18" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2HL-tj-fqA"/>
+                        <constraint firstAttribute="width" constant="50" id="p0I-x4-dYL"/>
+                    </constraints>
+                    <connections>
+                        <action selector="checkInSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="X4b-o9-dZy"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnw-S2-Ygy">
+                    <rect key="frame" x="418" y="41" width="29" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Y0l-FC-zee"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.13333333333333333" green="0.074509803921568626" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mXm-9s-U7h" secondAttribute="bottom" constant="14" id="5SB-xU-tcY"/>
+                <constraint firstAttribute="bottom" secondItem="V8f-Xs-9j3" secondAttribute="bottom" constant="18" id="9Pb-tG-JHE"/>
+                <constraint firstAttribute="trailing" secondItem="V8f-Xs-9j3" secondAttribute="trailing" constant="39" id="Fbi-6i-0P6"/>
+                <constraint firstItem="nTj-vd-rhS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="IS2-Oa-Row"/>
+                <constraint firstItem="nTj-vd-rhS" firstAttribute="leading" secondItem="S1b-NR-SPn" secondAttribute="trailing" constant="-49" id="Q0Q-RM-LP6"/>
+                <constraint firstItem="Hnw-S2-Ygy" firstAttribute="leading" secondItem="V8f-Xs-9j3" secondAttribute="trailing" id="ZSj-8O-484"/>
+                <constraint firstItem="mXm-9s-U7h" firstAttribute="leading" secondItem="nTj-vd-rhS" secondAttribute="trailing" constant="10" id="dCu-em-gvc"/>
+                <constraint firstItem="Hnw-S2-Ygy" firstAttribute="bottom" secondItem="V8f-Xs-9j3" secondAttribute="bottom" constant="8" id="hV9-JV-vhL"/>
+                <constraint firstAttribute="trailing" secondItem="mXm-9s-U7h" secondAttribute="trailing" constant="29" id="nPM-I8-vWf"/>
+                <constraint firstItem="S1b-NR-SPn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="rMP-UQ-nrd"/>
+                <constraint firstItem="S1b-NR-SPn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="t06-xC-Qhl"/>
+                <constraint firstAttribute="trailing" secondItem="Hnw-S2-Ygy" secondAttribute="trailing" constant="10" id="uH4-aH-Vtn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="checkInButton" destination="V8f-Xs-9j3" id="rhF-fg-Vid"/>
+                <outlet property="checkInImage" destination="mXm-9s-U7h" id="GzX-eF-7PI"/>
+                <outlet property="childUserAvatar" destination="S1b-NR-SPn" id="dDr-HQ-kgf"/>
+                <outlet property="childUserName" destination="nTj-vd-rhS" id="eFQ-dT-9Ij"/>
+                <outletCollection property="gestureRecognizers" destination="X51-KT-63e" appends="YES" id="xpJ-Vt-1CZ"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-565"/>
+        </view>
+        <tapGestureRecognizer id="X51-KT-63e">
+            <connections>
+                <action selector="childViewDidTapped:" destination="iN0-l3-epB" id="o3I-zW-mpP"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

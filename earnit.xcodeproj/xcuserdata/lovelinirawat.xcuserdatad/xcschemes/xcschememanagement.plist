@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>SchemeUserState</key>
+    <dict>
+        <key>earnit-Dev.xcscheme</key>
+        <dict>
+            <key>orderHint</key>
+            <integer>21</integer>
+        </dict>
+        <key>earnit.xcscheme</key>
+        <dict>
+            <key>orderHint</key>
+            <integer>0</integer>
+        </dict>
+    </dict>
+    <key>SuppressBuildableAutocreation</key>
+    <dict>
+        <key>4792841F1F0B32DC00EDAC6D</key>
+        <dict>
+            <key>primary</key>
+            <true/>
+        </dict>
+        <key>479284361F0B32DD00EDAC6D</key>
+        <dict>
+            <key>primary</key>
+            <true/>
+        </dict>
+        <key>479284411F0B32DD00EDAC6D</key>
+        <dict>
+            <key>primary</key>
+            <true/>
+        </dict>
+        <key>ED89A5371F96F5EE008BC2FD</key>
+        <dict>
+            <key>primary</key>
+            <true/>
+        </dict>
+    </dict>
+</dict>
+</plist>

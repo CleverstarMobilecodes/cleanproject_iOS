@@ -1,0 +1,6 @@
+framework module Pods_earnit {
+  umbrella header "Pods-earnit-umbrella.h"
+
+  export *
+  module * { export * }
+}

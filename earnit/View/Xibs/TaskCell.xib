@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="101" id="KFd-17-D9i" userLabel="TaskCell" customClass="TaskCell">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KFd-17-D9i" id="dUS-tn-kUu">
+                <rect key="frame" x="0.0" y="0.0" width="478" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:30 pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djs-W5-oXs">
+                        <rect key="frame" x="403" y="20" width="67" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="67" id="B23-kX-CNo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TaskName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrm-8h-Lb5">
+                        <rect key="frame" x="8" y="20" width="362" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="59" id="CUd-HE-ujZ"/>
+                            <constraint firstAttribute="width" constant="362" id="xhU-JM-WL8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vrm-8h-Lb5" firstAttribute="leading" secondItem="dUS-tn-kUu" secondAttribute="leading" constant="8" id="0do-gU-hff"/>
+                    <constraint firstItem="Djs-W5-oXs" firstAttribute="top" secondItem="dUS-tn-kUu" secondAttribute="top" constant="20" id="6Fe-ht-Eg2"/>
+                    <constraint firstAttribute="trailing" secondItem="Djs-W5-oXs" secondAttribute="trailing" constant="8" id="Icd-vC-Gn6"/>
+                    <constraint firstAttribute="bottom" secondItem="Djs-W5-oXs" secondAttribute="bottom" constant="19.5" id="MjE-6Y-R0N"/>
+                    <constraint firstAttribute="bottom" secondItem="Vrm-8h-Lb5" secondAttribute="bottom" constant="21.5" id="fMk-wb-1Bn"/>
+                    <constraint firstItem="Vrm-8h-Lb5" firstAttribute="top" secondItem="dUS-tn-kUu" secondAttribute="top" constant="20" id="rf1-lO-MQz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="taskName" destination="Vrm-8h-Lb5" id="7yr-uO-41I"/>
+                <outlet property="taskTime" destination="Djs-W5-oXs" id="sJ5-BP-7lP"/>
+            </connections>
+            <point key="canvasLocation" x="-178" y="-286.5"/>
+        </tableViewCell>
+    </objects>
+</document>
